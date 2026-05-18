@@ -1,8 +1,8 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown, HelpCircle } from "lucide-react";
 
 const faqs = [
   {
@@ -31,38 +31,36 @@ const faqs = [
   },
   {
     q: "Apakah ada batasan jumlah pengguna dalam satu akun?",
-    a: "Tergantung paket. Paket Starter untuk 1 pengguna, Pro untuk 3 pengguna, dan Business untuk 10 pengguna. Paket Enterprise memiliki pengguna tak terbatas. Kamu juga bisa menambah slot pengguna ekstra.",
+    a: "Tergantung paket. Starter untuk 1 pengguna, Pro untuk 3 pengguna, Business untuk 10 pengguna. Enterprise memiliki pengguna tak terbatas. Kamu juga bisa menambah slot pengguna ekstra.",
   },
   {
     q: "Bagaimana cara pembayaran dan apakah ada biaya tersembunyi?",
-    a: "Kami menerima pembayaran via transfer bank, kartu kredit/debit, dan QRIS. Tidak ada biaya tersembunyi. Harga yang tertera sudah termasuk semua fitur sesuai paket. Satu-satunya tambahan adalah PPN 11% sesuai regulasi pemerintah.",
+    a: "Kami menerima pembayaran via transfer bank, kartu kredit/debit, dan QRIS. Tidak ada biaya tersembunyi. Harga yang tertera sudah termasuk semua fitur sesuai paket. Satu-satunya tambahan adalah PPN 11% sesuai regulasi.",
   },
 ];
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-24 bg-[#0f0f1a] relative overflow-hidden">
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent" />
+    <section id="faq" className="py-24 section-tinted relative overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-violet-300 to-transparent" />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-14"
         >
-          <span className="inline-block text-indigo-400 text-sm font-semibold tracking-wider uppercase mb-4 bg-indigo-500/10 border border-indigo-500/20 px-4 py-1.5 rounded-full">
-            FAQ
-          </span>
-          <h2 className="text-4xl sm:text-5xl font-bold mb-5">
+          <span className="badge mb-5">FAQ</span>
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#1e1b4b] mb-4">
             Pertanyaan yang{" "}
             <span className="gradient-text">Sering Ditanya</span>
           </h2>
-          <p className="text-gray-400 text-lg">
-            Tidak menemukan jawaban yang kamu cari?{" "}
-            <a href="mailto:hello@lapakoo.id" className="text-indigo-400 hover:text-indigo-300 underline">
+          <p className="text-violet-600/70">
+            Tidak menemukan jawaban?{" "}
+            <a href="mailto:hello@lapakoo.id" className="text-violet-600 font-semibold underline hover:text-violet-800">
               Hubungi kami
             </a>
           </p>
@@ -75,33 +73,40 @@ export default function FAQ() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.06 }}
-              className="glass-card rounded-2xl overflow-hidden"
+              transition={{ delay: i * 0.05 }}
+              className={`bg-white rounded-2xl border overflow-hidden transition-all duration-300 ${
+                open === i
+                  ? "border-violet-300 shadow-lg shadow-violet-100"
+                  : "border-violet-100 hover:border-violet-200"
+              }`}
             >
               <button
-                onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors"
+                onClick={() => setOpen(open === i ? null : i)}
+                className="w-full flex items-center gap-3 p-5 text-left hover:bg-violet-50/50 transition-colors"
               >
-                <span className="font-semibold text-white pr-4">{faq.q}</span>
+                <HelpCircle className={`w-5 h-5 flex-shrink-0 transition-colors ${open === i ? "text-violet-600" : "text-violet-300"}`} />
+                <span className={`font-semibold flex-1 text-sm sm:text-base ${open === i ? "text-violet-800" : "text-[#1e1b4b]"}`}>
+                  {faq.q}
+                </span>
                 <motion.div
-                  animate={{ rotate: openIndex === i ? 180 : 0 }}
+                  animate={{ rotate: open === i ? 180 : 0 }}
                   transition={{ duration: 0.2 }}
                   className="flex-shrink-0"
                 >
-                  <ChevronDown className="w-5 h-5 text-indigo-400" />
+                  <ChevronDown className={`w-5 h-5 transition-colors ${open === i ? "text-violet-600" : "text-violet-300"}`} />
                 </motion.div>
               </button>
 
               <AnimatePresence>
-                {openIndex === i && (
+                {open === i && (
                   <motion.div
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.25 }}
+                    transition={{ duration: 0.22 }}
                     className="overflow-hidden"
                   >
-                    <div className="px-6 pb-6 text-gray-400 leading-relaxed text-sm border-t border-white/5 pt-4">
+                    <div className="px-5 pb-5 text-violet-700/70 text-sm leading-relaxed border-t border-violet-100 pt-4 ml-8">
                       {faq.a}
                     </div>
                   </motion.div>

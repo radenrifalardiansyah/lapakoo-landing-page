@@ -20,22 +20,19 @@ export const metadata: Metadata = {
   keywords: "lapakoo, toko online, marketplace, manajemen toko, jualan online",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body className="antialiased bg-[#0f0f1a] text-white min-h-screen">
+      <body className="antialiased bg-white text-[#1e1b4b] min-h-screen">
         {children}
         <Toaster
           position="top-right"
           toastOptions={{
             style: {
-              background: "#1a1a2e",
-              color: "#fff",
-              border: "1px solid rgba(99, 102, 241, 0.3)",
+              background: "#fff",
+              color: "#1e1b4b",
+              border: "1.5px solid #ddd6fe",
+              boxShadow: "0 8px 24px rgba(124,58,237,0.12)",
             },
           }}
         />
