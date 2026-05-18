@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { UserPlus, Store, Rocket, CheckCircle2 } from "lucide-react";
+import Card3D from "./Card3D";
 
 const steps = [
   {
@@ -77,8 +78,8 @@ export default function HowItWorks() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.14, duration: 0.5 }}
-              className={`relative rounded-3xl p-8 ${s.light} border ${s.border}`}
             >
+            <Card3D className={`relative rounded-3xl p-8 ${s.light} border ${s.border}`} intensity={8}>
               {/* Big step number (decorative) */}
               <div className={`absolute top-4 right-6 text-7xl font-black ${s.num_color} select-none pointer-events-none`}>
                 {s.step}
@@ -103,6 +104,7 @@ export default function HowItWorks() {
                   </li>
                 ))}
               </ul>
+            </Card3D>
             </motion.div>
           ))}
         </div>

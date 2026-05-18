@@ -5,6 +5,7 @@ import {
   LayoutDashboard, Store, BarChart3, Bell, Package,
   Headphones, Zap, Shield, Globe,
 } from "lucide-react";
+import Card3D from "./Card3D";
 
 const features = [
   {
@@ -95,17 +96,18 @@ export default function Features() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.06, duration: 0.45 }}
-              className="group card-white card-hover rounded-2xl p-6 cursor-default"
             >
-              {/* Icon */}
-              <div className={`w-12 h-12 rounded-2xl ${f.bg} flex items-center justify-center mb-4 transition-all duration-300 ${f.accent}`}>
-                <f.icon className={`w-6 h-6 ${f.icon_color} group-hover:text-white transition-colors duration-300`} />
-              </div>
+              <Card3D className="group card-white rounded-2xl p-6 cursor-default h-full" intensity={10}>
+                {/* Icon */}
+                <div className={`w-12 h-12 rounded-2xl ${f.bg} flex items-center justify-center mb-4 transition-all duration-300 ${f.accent}`}>
+                  <f.icon className={`w-6 h-6 ${f.icon_color} group-hover:text-white transition-colors duration-300`} />
+                </div>
 
-              <h3 className="text-base font-bold text-[#1e1b4b] mb-2 group-hover:text-violet-700 transition-colors">
-                {f.title}
-              </h3>
-              <p className="text-violet-600/60 text-sm leading-relaxed">{f.description}</p>
+                <h3 className="text-base font-bold text-[#1e1b4b] mb-2 group-hover:text-violet-700 transition-colors">
+                  {f.title}
+                </h3>
+                <p className="text-violet-600/60 text-sm leading-relaxed">{f.description}</p>
+              </Card3D>
             </motion.div>
           ))}
         </div>
