@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { ShoppingBag, MessageCircle, Send, AtSign, Mail, Phone, MapPin } from "lucide-react";
+import Image from "next/image";
+import { MessageCircle, Send, AtSign, Mail, Phone, MapPin } from "lucide-react";
 
 const footerLinks = {
   Produk:    [{ label: "Fitur", href: "#features" },{ label: "Harga", href: "#pricing" },{ label: "Integrasi", href: "#" },{ label: "Changelog", href: "#" },{ label: "Roadmap", href: "#" }],
@@ -23,9 +24,7 @@ export default function Footer() {
           {/* Brand col */}
           <div className="col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-5">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-violet-400 to-purple-500 flex items-center justify-center shadow-lg">
-                <ShoppingBag className="w-5 h-5 text-white" />
-              </div>
+              <Image src="/mini-logo-lapakoo.png" alt="LapaKoo" width={36} height={36} className="rounded-lg" />
               <span className="text-xl font-extrabold text-white">LapaKoo</span>
             </Link>
             <p className="text-violet-300/70 text-sm leading-relaxed mb-6 max-w-xs">

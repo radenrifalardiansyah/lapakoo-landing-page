@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ShoppingBag, Zap } from "lucide-react";
+import { Menu, X, Zap } from "lucide-react";
 
 const navLinks = [
   { label: "Fitur",      href: "#features" },
@@ -39,9 +40,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-violet-600 to-purple-500 flex items-center justify-center shadow-md shadow-violet-300">
-              <ShoppingBag className="w-5 h-5 text-white" />
-            </div>
+            <Image src="/mini-logo-lapakoo.png" alt="LapaKoo" width={36} height={36} className="rounded-lg" />
             <span className="text-xl font-extrabold gradient-text">LapaKoo</span>
           </Link>
 
