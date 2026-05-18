@@ -10,8 +10,8 @@ const faqs = [
     a: "Ya, benar. Kamu bisa mencoba semua fitur paket Pro secara gratis selama 14 hari tanpa kartu kredit. Setelah periode trial habis, kamu bisa memilih paket yang sesuai atau berhenti tanpa biaya apapun.",
   },
   {
-    q: "Marketplace apa saja yang bisa diintegrasikan?",
-    a: "LapaKoo mendukung Shopee, Tokopedia, Lazada, TikTok Shop, Blibli, Bukalapak, JD.id, dan masih banyak lagi. Total lebih dari 15 marketplace dan platform e-commerce yang kami dukung.",
+    q: "Apa yang bisa saya jual di toko LapaKoo?",
+    a: "Kamu bisa menjual produk fisik maupun digital di toko LapaKoo. Mulai dari fashion, elektronik, makanan, hingga produk handmade — semua bisa dikelola dengan mudah dari satu dashboard.",
   },
   {
     q: "Apakah data toko saya aman di LapaKoo?",
@@ -22,16 +22,16 @@ const faqs = [
     a: "Tidak sama sekali. LapaKoo dirancang untuk semua orang. Interface yang intuitif memungkinkan siapa pun bisa langsung pakai dalam hitungan menit. Kami juga menyediakan video tutorial dan panduan lengkap.",
   },
   {
-    q: "Bagaimana cara menghubungkan toko ke LapaKoo?",
-    a: "Sangat mudah! Cukup masuk ke menu Integrasi, pilih marketplace yang ingin dihubungkan, lalu ikuti langkah otentikasi. Proses ini hanya membutuhkan waktu 2-5 menit dan stok serta produk akan langsung tersinkronisasi.",
+    q: "Bagaimana cara membuat toko di LapaKoo?",
+    a: "Sangat mudah! Setelah daftar, kamu langsung bisa setup toko online kamu — isi nama toko, upload produk, atur harga, dan toko kamu sudah siap menerima pesanan. Proses ini hanya membutuhkan waktu 5-10 menit.",
   },
   {
     q: "Apakah bisa upgrade atau downgrade paket kapan saja?",
     a: "Tentu! Kamu bisa upgrade atau downgrade paket kapan saja. Saat upgrade, kamu hanya membayar selisih untuk sisa periode. Saat downgrade, perubahan akan berlaku di periode penagihan berikutnya.",
   },
   {
-    q: "Apakah ada batasan jumlah pengguna dalam satu akun?",
-    a: "Tergantung paket. Starter untuk 1 pengguna, Pro untuk 3 pengguna, Business untuk 10 pengguna. Enterprise memiliki pengguna tak terbatas. Kamu juga bisa menambah slot pengguna ekstra.",
+    q: "Apakah toko saya punya domain sendiri?",
+    a: "Ya! Setiap toko di LapaKoo mendapatkan subdomain gratis (namatoko.lapakoo.id). Untuk paket Pro ke atas, kamu bisa menghubungkan domain custom milikmu sendiri (contoh: tokoku.com) agar terlihat lebih profesional.",
   },
   {
     q: "Bagaimana cara pembayaran dan apakah ada biaya tersembunyi?",

@@ -13,7 +13,7 @@ const plans = [
     gradient: "from-slate-500 to-gray-600",
     light: "bg-slate-50", border: "border-slate-200",
     popular: false,
-    features: ["2 Toko marketplace","500 produk","200 pesanan/bulan","Laporan dasar","Support email","Sinkronisasi stok"],
+    features: ["1 Toko online","500 produk","200 pesanan/bulan","Laporan dasar","Support email","Domain toko sendiri"],
   },
   {
     name: "Pro", icon: Star,
@@ -22,7 +22,7 @@ const plans = [
     gradient: "from-violet-600 to-purple-600",
     light: "bg-violet-600", border: "border-violet-400",
     popular: true,
-    features: ["10 Toko marketplace","5.000 produk","Pesanan tak terbatas","Analitik AI","Otomasi pesanan","Multi-ekspedisi","Support prioritas 24/7","Export laporan"],
+    features: ["1 Toko online","5.000 produk","Pesanan tak terbatas","Analitik AI","Otomasi pesanan","Multi-ekspedisi","Support prioritas 24/7","Export laporan"],
   },
   {
     name: "Business", icon: Building2,
@@ -31,7 +31,7 @@ const plans = [
     gradient: "from-violet-500 to-fuchsia-600",
     light: "bg-violet-50", border: "border-violet-200",
     popular: false,
-    features: ["Unlimited toko","Unlimited produk","Unlimited pesanan","AI enterprise","Tim 10 user","API access","Account manager","Onboarding khusus","SLA 99.9%"],
+    features: ["1 Toko online","Unlimited produk","Unlimited pesanan","AI enterprise","Tim 10 user","API access","Account manager","Onboarding khusus","SLA 99.9%"],
   },
   {
     name: "Enterprise", icon: Sparkles,

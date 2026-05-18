@@ -14,10 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LapaKoo – Platform Toko Online Terlengkap",
+  title: "LapaKoo – Buat Toko Online Kamu Sendiri",
   description:
-    "LapaKoo membantu ribuan penjual online mengelola toko, produk, dan pesanan di semua marketplace dalam satu platform canggih.",
-  keywords: "lapakoo, toko online, marketplace, manajemen toko, jualan online",
+    "LapaKoo adalah platform untuk membangun toko online sendiri. Kelola produk, terima pesanan, dan tumbuhkan bisnis dari satu dashboard cerdas.",
+  keywords: "lapakoo, toko online, buat toko online, jualan online, platform toko, e-commerce",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

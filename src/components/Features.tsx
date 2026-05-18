@@ -10,13 +10,13 @@ import Card3D from "./Card3D";
 const features = [
   {
     icon: LayoutDashboard, title: "Dashboard Terpadu",
-    description: "Pantau semua toko, pesanan, dan pendapatan dari satu dashboard yang intuitif dan real-time.",
+    description: "Pantau semua pesanan, stok produk, dan pendapatan toko dari satu dashboard yang intuitif dan real-time.",
     bg: "bg-violet-100",  icon_color: "text-violet-600",
     accent: "group-hover:bg-violet-600",
   },
   {
-    icon: Store, title: "Multi-Channel Sync",
-    description: "Kelola Shopee, Tokopedia, Lazada, TikTok Shop sekaligus. Stok otomatis tersinkronisasi.",
+    icon: Store, title: "Toko Online Sendiri",
+    description: "Miliki toko online dengan domain sendiri. Tampilan profesional, mudah dikustomisasi sesuai brand kamu.",
     bg: "bg-pink-100",    icon_color: "text-pink-600",
     accent: "group-hover:bg-pink-500",
   },
@@ -27,8 +27,8 @@ const features = [
     accent: "group-hover:bg-purple-600",
   },
   {
-    icon: Package, title: "Manajemen Stok",
-    description: "Alert stok habis otomatis, manajemen gudang, dan sinkronisasi stok real-time ke semua platform.",
+    icon: Package, title: "Manajemen Produk & Stok",
+    description: "Kelola ribuan produk dengan mudah. Alert stok habis otomatis dan manajemen katalog yang lengkap.",
     bg: "bg-cyan-100",    icon_color: "text-cyan-600",
     accent: "group-hover:bg-cyan-500",
   },
@@ -45,8 +45,8 @@ const features = [
     accent: "group-hover:bg-emerald-500",
   },
   {
-    icon: Globe, title: "Integrasi Ekspedisi",
-    description: "Terintegrasi dengan J&T, JNE, SiCepat, Anteraja, dan 20+ ekspedisi lainnya.",
+    icon: Globe, title: "Pengiriman Terintegrasi",
+    description: "Terintegrasi dengan J&T, JNE, SiCepat, Anteraja, dan 20+ ekspedisi. Cetak label otomatis.",
     bg: "bg-teal-100",    icon_color: "text-teal-600",
     accent: "group-hover:bg-teal-500",
   },

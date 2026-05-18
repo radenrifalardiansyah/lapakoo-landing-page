@@ -23,9 +23,8 @@ export default function Footer() {
 
           {/* Brand col */}
           <div className="col-span-2">
-            <Link href="/" className="flex items-center gap-2 mb-5">
-              <Image src="/mini-logo-lapakoo.png" alt="LapaKoo" width={36} height={36} className="rounded-lg" />
-              <span className="text-xl font-extrabold text-white">LapaKoo</span>
+            <Link href="/" className="flex items-center mb-5">
+              <Image src="/logo.png" alt="LapaKoo" width={1142} height={720} className="h-10 w-auto" />
             </Link>
             <p className="text-violet-300/70 text-sm leading-relaxed mb-6 max-w-xs">
               Platform manajemen toko online terlengkap untuk penjual Indonesia yang ingin

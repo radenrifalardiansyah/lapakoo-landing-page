@@ -137,7 +137,7 @@ export default function Hero() {
           >
             <span className="badge">
               <Zap className="w-3.5 h-3.5 text-violet-600" />
-              Platform #1 untuk Penjual Online Indonesia
+              Platform Toko Online Terbaik untuk Indonesia
               <span className="relative flex h-2 w-2 ml-1">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-violet-500 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-violet-600" />
@@ -152,12 +152,12 @@ export default function Hero() {
             transition={{ duration: 0.65, delay: 0.1 }}
             className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.1] mb-6 text-[#1e1b4b]"
           >
-            Kelola Semua{" "}
+            Buat{" "}
             <span className="gradient-text">Toko Online</span>
             <br />
-            Mu di{" "}
+            Kamu Sendiri,{" "}
             <span className="relative inline-block">
-              Satu Tempat
+              Mulai Hari Ini
               <motion.svg
                 initial={{ pathLength: 0 }}
                 animate={{ pathLength: 1 }}
@@ -190,9 +190,9 @@ export default function Hero() {
             transition={{ duration: 0.55, delay: 0.2 }}
             className="text-lg sm:text-xl text-violet-700/70 max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            LapaKoo menghubungkan semua marketplace favoritmu — Shopee, Tokopedia, Lazada, dan
-            lainnya — dalam satu dashboard cerdas. Tingkatkan omzet, hemat waktu, dan kelola
-            bisnis dengan mudah.
+            LapaKoo adalah platform untuk membangun toko online kamu sendiri — kelola produk,
+            terima pesanan, dan tumbuhkan bisnis dari satu dashboard cerdas. Tanpa ribet,
+            tanpa keahlian teknis.
           </motion.p>
 
           {/* CTA Buttons */}

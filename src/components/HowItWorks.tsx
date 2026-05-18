@@ -20,26 +20,26 @@ const steps = [
   {
     step: "02",
     icon: Store,
-    title: "Hubungkan Toko",
+    title: "Buat & Atur Toko",
     description:
-      "Sambungkan semua marketplace kamu — Shopee, Tokopedia, Lazada, dan lainnya dengan mudah.",
+      "Setup toko online kamu dalam hitungan menit. Tambahkan produk, atur harga, dan desain tampilan toko sesuai brand kamu.",
     bg: "from-pink-500 to-rose-500",
     light: "bg-pink-50",
     border: "border-pink-200",
     num_color: "text-pink-200",
-    details: ["Shopee, Tokopedia, Lazada", "TikTok Shop, Blibli, dll", "Sinkronisasi otomatis"],
+    details: ["Upload produk mudah", "Custom tampilan toko", "Domain toko sendiri"],
   },
   {
     step: "03",
     icon: Rocket,
-    title: "Kelola & Tumbuhkan",
+    title: "Jual & Tumbuhkan",
     description:
-      "Pantau pesanan, kelola stok, lihat analitik, dan otomasi proses bisnis dari satu tempat.",
+      "Terima pesanan, proses pembayaran, dan kirim ke pelanggan. Pantau performa toko dari satu dashboard cerdas.",
     bg: "from-orange-400 to-amber-500",
     light: "bg-amber-50",
     border: "border-amber-200",
     num_color: "text-amber-200",
-    details: ["Dashboard real-time", "Laporan otomatis", "AI insight bisnis"],
+    details: ["Terima pesanan real-time", "Laporan penjualan otomatis", "AI insight bisnis"],
   },
 ];
 
